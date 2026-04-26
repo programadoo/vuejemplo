@@ -1,0 +1,7 @@
+body { font-family: sans-serif; background: #f4f4f9; padding: 20px; }
+.event-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+.card { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 5px solid #2ecc71; }
+.score { font-size: 1.5rem; font-weight: bold; color: #2c3e50; }
+.badge { padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; color: white; }
+.fútbol { background: #27ae60; }
+.basketball { background: #e67e22; }

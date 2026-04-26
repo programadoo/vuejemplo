@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="app">
+        <navbar-component></navbar-component>
+
+        <main>
+            <div v-if="cargando" class="loader">
+                 Cargando eventos deportivos...
+            </div>
+
+            <div v-else class="event-grid">
+                <event-card 
+                    v-for="e in eventos" 
+                    :key="e.id" 
+                    :evento="e">
+                </event-card>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
